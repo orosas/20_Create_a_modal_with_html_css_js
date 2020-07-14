@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    /* background: rgb(130, 192, 192); */
+    /* color: white; */
+}
+
+.button{
+    background: darkkhaki;
+    padding: 1em 2em;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: #ff44ff;
+    font-weight: bold;
+}
+
+.modal{
+    /* Nota: Al cargar de manera inicial, no se muestra div */
+    display: none;
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    /* Nota: The overflow shorthand CSS property sets 
+    what to do when an element's content is too big to fit in its block formatting context.  */
+    /* Referencia:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+    background-color: #f4f4f4;
+    /* Nota: Centra de manera vertical el div .model-content */
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    /* Nota: Se pueden combinar varios box-shadow separando las propiedades con una coma. */
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    border-radius: 3px;
+
+}
+
+.closeBtn{
+    color: #cccccc;
+    float: right;
+    font-size: 1.4rem;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
