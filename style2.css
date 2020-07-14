@@ -1,11 +1,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     /* background: rgb(130, 192, 192); */
     /* color: white; */
 }
 
+/* Nota: Botón para abrir modal */
 .button{
     background: darkkhaki;
     padding: 1em 2em;
@@ -19,6 +20,7 @@ body{
     font-weight: bold;
 }
 
+/* Nota: Ventana modal */
 .modal{
     /* Nota: Al cargar de manera inicial, no se muestra div */
     display: none;
@@ -40,7 +42,7 @@ body{
     background-color: #f4f4f4;
     /* Nota: Centra de manera vertical el div .model-content */
     margin: 20% auto;
-    padding: 20px;
+    /* padding: 20px; */
     width: 70%;
     /* Nota: Se pueden combinar varios box-shadow separando las propiedades con una coma. */
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -51,10 +53,33 @@ body{
     animation-duration: 1s;
 }
 
+.modal-header h2, .modal-footer h3{
+    margin: 0;
+}
+
+.modal-header{
+    background: blueviolet;
+    color: white;
+    padding: 10px;
+
+}
+
+.modal-body{
+    padding: 10px 20px;
+}
+
+.modal-footer{
+    background: rgb(112, 35, 184);
+    padding: .2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
 .closeBtn{
-    color: #cccccc;
+    color: white;
     float: right;
     font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .closeBtn:hover, .closeBtn:focus{

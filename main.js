@@ -16,7 +16,7 @@ modalBtn.addEventListener('click', openModal);
 // Listen for close click
 closeBtn.addEventListener('click', closeModal);
 // Liste for outside click
-window.addEventListener('click', clickOutside);
+window.addEventListener('click', outsideClick);
 
 
 //Function to open modal
@@ -32,6 +32,9 @@ function closeModal() {
 }
 
 //Function to close modal if outside click
-function closeModal() {
-    modal.style.display = 'none';
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
+    
 }
